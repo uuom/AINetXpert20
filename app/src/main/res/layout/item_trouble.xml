@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    app:cardBackgroundColor="@color/md_white"
+    app:cardCornerRadius="0dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="0dp"
+    android:layout_height="100dp"
+    app:cardElevation="1dp"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_trouble_level"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:src="@drawable/trouble_level_1"/>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="电路故障"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/md_blue_200"
+                android:id="@+id/tv_trouble_type" />
+
+            <TextView
+                android:text="2014-09-25 08:58:50"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/tv_trouble_time"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignTop="@+id/tv_trouble_type"
+                android:layout_toLeftOf="@+id/iv_unread"
+                android:layout_toStartOf="@+id/iv_unread" />
+
+            <ImageView
+                android:id="@+id/iv_unread"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:src="@drawable/unread"
+                android:layout_alignTop="@+id/tv_trouble_time"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/tv_trouble_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/md_black"
+                android:text="R5 设备实时信息 管理地址：10.1.249.231	中断时间：2014-09-25 08:58:50 中断时长：16420:56:53"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

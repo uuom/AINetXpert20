@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NetXpert</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">关于</string>
+    <string name="action_logout">安全退出</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_data">暂无数据</string>
+    <string name="no_more_data">已加载全部数据</string>
+
+    <array name="message_tab_title">
+        <item>未处理</item>
+        <item>处理中</item>
+        <item>已解决</item>
+    </array>
+</resources>
